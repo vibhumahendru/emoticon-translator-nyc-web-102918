@@ -2,8 +2,8 @@
 require "yaml"
 require "pry"
 def load_library(path)
-  emoticonHash = YAML.load_file(path)
-  
+  emoticons = YAML.load_file(path)
+  emoticonHash = {}
   emoticonHash[get_meaning] = {}
   emoticonHash[get_emoticon] = {}
 end
