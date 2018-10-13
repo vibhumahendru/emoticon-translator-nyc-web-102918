@@ -1,8 +1,8 @@
 # require modules here
 require "yaml"
 require "pry"
-def load_library(emoticons)
-  emoticonHash = YAML.load_file(emoticons)\
+def load_library(path)
+  emoticonHash = YAML.load_file(path)
   
   emoticonHash[get_meaning] = {}
   emoticonHash[get_emoticon] = {}
